@@ -1,9 +1,9 @@
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import './App.css';
 
 function App() {
   return (
-    <Router>
+    <BrowserRouter>
       <div className="App">
         <ul>
           <li><Link to='/'>Home</Link></li>
@@ -19,7 +19,7 @@ function App() {
           <Route path='/contact' element={<Contact />} />
         </Routes>
       </div>
-    </Router>
+    </BrowserRouter>
   );
 }
 
@@ -38,4 +38,5 @@ function Services() {
 function Contact() {
   return <h2>Contact Page</h2>
 }
+
 export default App;
